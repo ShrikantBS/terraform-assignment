@@ -4,13 +4,13 @@
 This project automates the deployment of a **Node.js API** that generates dummy data using **Terraform & AWS ECS (Fargate)**.
 
 ## End-to-End Request Flow
-- **Client → Sends request to API Gateway
-- **API Gateway → Authenticates via Cognito, applies rate limits
-- **ALB → Routes request to ECS API service
-- **ECS API (Node.js) → Processes request, queries RDS if needed
-- **RDS (PostgreSQL) → Returns data to ECS API
-- **ECS API → Sends response back to client
-- **CloudWatch → Monitors logs, sends alerts
+- Client → Sends request to API Gateway
+- API Gateway → Authenticates via Cognito, applies rate limits
+- ALB → Routes request to ECS API service
+- ECS API (Node.js) → Processes request, queries RDS if needed
+- RDS (PostgreSQL) → Returns data to ECS API
+- ECS API → Sends response back to client
+- CloudWatch → Monitors logs, sends alerts
 
 
 ## 📌 Features
