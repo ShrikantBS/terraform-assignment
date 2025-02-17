@@ -37,6 +37,6 @@ This project automates the deployment of a **Node.js API** that generates dummy 
   - `SNYK_TOKEN` (for security scans)
 
 ### 2️⃣ Clone the Repository
-```sh
-git clone https://github.com/yourusername/devops-assignment.git
-cd devops-assignment
+```sh[
+git clone https://github.com/ShrikantBS/terraform-assignment.git
+cd terraform-assignment
