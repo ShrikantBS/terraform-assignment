@@ -29,7 +29,7 @@ multi_az          = true
 publicly_accessible = false
 
 # CI/CD
-repo_name = "your-github-repo"
+repo_name = "terraform-assignment"
 
 # Monitoring
 enable_alarms  = true
