@@ -90,8 +90,10 @@ module "cicd" {
 }
 
 module "monitoring" {
-  source = "./modules/monitoring"
-  tool   = "CLOUDWATCH"
-  enable_alarms = true
-  enable_metrics = true
+  source          = "./modules/monitoring"
+  ecs_cluster     = module.ecs.cluster_name
+  ecs_service     = module.ecs.service_name
+  rds_instance_id = module.rds.db_instance
+  alert_email     = "alerts@example.com"
 }
+
